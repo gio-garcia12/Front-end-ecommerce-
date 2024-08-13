@@ -1,0 +1,69 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://www.weareplaystation.fr/cdn-cgi/image/w=3840,f=auto,q=80/api/upload/media/post/0003/42/thumb_241062_post_big.jpg');
+    background-size:cover;
+    background-position: center center;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .about-content {
+    display: flex;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .about-image-container {
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+  }
+  
+  .about-image {
+    width: 80%;
+    height: 80%;
+    object-fit:fill;
+  }
+  
+  .about-text {
+    flex: 2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .about-image-container {
+      width: 100%;
+    }
+  
+    .about-text {
+      width: 100%;
+      padding: 20px;
+    }
+  }

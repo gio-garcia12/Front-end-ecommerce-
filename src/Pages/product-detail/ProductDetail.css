@@ -1,0 +1,64 @@
+.detail{
+    background-image:url('https://p4.wallpaperbetter.com/wallpaper/123/747/629/minimalism-monochrome-space-invaders-simple-background-wallpaper-preview.jpg');
+    background-size:cover;
+    background-position: center center;
+}
+.product-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    flex-direction: row;
+   
+  }
+  
+  .product-image {
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+  }
+  
+  .product-name {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .product-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      flex-direction: column;
+    }
+  
+    .product-image {
+        height: 200px;
+        width: 60%;
+       
+    }
+  
+    .product-info {
+      width: 100%;
+    }
+  }

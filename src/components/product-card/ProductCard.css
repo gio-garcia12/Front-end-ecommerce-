@@ -1,0 +1,163 @@
+
+.card-wrapper{
+    flex:1;
+    display:flex;
+    justify-content: center;
+   
+    
+}
+
+.card {
+    width: 320px;
+    border: 1px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--font-card-color);
+    font-size: 10px;
+
+}
+
+.card:hover{
+    transform: scale (1.04);
+}
+
+.card-header {
+    height: 235px;
+    position: relative;
+    /* background-color: red; */
+}
+
+.actions{
+    padding: .5rem;
+    position: absolute;
+    top:0;
+    right: 5px;
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.actions i:hover{
+    color:var(--secondary-color);
+    cursor: pointer;
+
+}
+
+.card-img {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+    position:absolute;
+    transition: opacity .3s ease-in-out;
+}
+
+
+.card-main {
+    padding: 15px;
+}
+.card-title {
+    font-family: montserrat;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card-average {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+.card-price .price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-price small {
+    font-size: 10px;
+}
+.card-price .normal-price {
+    opacity: .6;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    gap:.5rem;
+}
+.card-selection {
+    display: flex;
+    gap: 12px;
+}
+
+.card-selection .quantity {
+    flex: 4 1 0;
+}
+.quantity-actions {
+    display: flex;
+    border: 1px solid var(--gray-color);
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.quantity-actions > * {
+    padding: 10px 15px;
+    flex: 1;
+}
+
+.quantity-actions button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.add-to-cart{
+margin-top: 10px;
+border:none;
+outline:none;
+background-color: rgb(4, 42, 77);;
+color:whitesmoke;
+padding:11.3px 15px;
+border-radius: 10px;
+font-weight: 600;
+line-height: 1;
+font-size:15px;
+position:relative;
+display:flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+gap:8px;
+cursor:pointer;
+font-family: outfit,sans-serif;
+}
+
+.add-to-cart:hover{
+    background-color:rgb(15, 89, 153);
+    color:whitesmoke;
+    transition:.3s;
+}
+
+.card-selection .version {
+    flex: 6 1 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-selection .version select {
+    padding: 10px 35px 10px 15px;
+    width: 100%;
+    border: 1px solid var(--gray-color);
+    height: 42px;
+    line-height: 20px;
+    border-radius: 11px;
+    appearance: none;
+    cursor: pointer;
+    background: url('https://grocery-workdo.myshopify.com/cdn/shop/t/3/assets/arrow-acc-dark.svg') no-repeat;
+    background-size: 12px;
+    background-position: calc(100% - 15px) 50%;
+}

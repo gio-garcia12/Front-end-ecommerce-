@@ -1,0 +1,147 @@
+header{
+    display:flex;
+    background-color: rgb(29, 35, 49);
+    z-index:2;
+
+    .header-nav{
+        display: flex;
+   
+        .nav-link{
+            text-decoration: none;
+            padding: 1rem 1rem;
+            color:rgb(165, 177, 187);
+
+            &.active{
+                color: rgb(255, 255, 255);
+                text-shadow: 0 0 2px white;
+            }
+
+            &:hover{
+                background-color: rgb(2, 92, 148);
+            }
+        }
+    }
+}
+
+.user-info{
+margin-left:auto;
+display:flex;
+align-items:center;
+font-size: 2rem;
+color:white;
+padding-inline: 1rem;
+
+.user-cart-container{
+    position:relative;
+
+    &::before{
+        content:attr(data-count);
+        position:absolute;
+        top:-10px;
+        right: -10px;
+        font-size: .75rem;
+        align-content: center;
+        text-align: center;
+        background-color: rgb(63, 109, 194);
+        color: white;
+        border-radius: 50%;
+        width:26px;
+        height: 26px;
+        
+
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

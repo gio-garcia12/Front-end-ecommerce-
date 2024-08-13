@@ -1,0 +1,14 @@
+.card-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.card-container a{
+    text-decoration: none;
+}
+.product-filters{
+    color:black;
+    
+}

@@ -1,0 +1,125 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(110, 105, 105, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+
+}
+
+.main-container{
+  flex:1;
+  max-width:100%;
+
+display: flex;
+flex-direction: column;
+/*margin:0 auto;*/
+
+}
+
+.admin-form-container{
+  display:flex;
+  justify-content: center;
+
+  .admin-form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    input, select, textarea{
+      padding: .2rem;
+    }
+    .input-error{
+      font-size: 10px;
+      color: red;
+    }
+
+  }
+}
+
+
+.admin-table-container{
+  margin-top: 2rem;
+  width: 100%;
+  overflow-x: auto;
+  background-color:rgba(0, 0, 0, .5);
+  color:white;
+ 
+  .admin-table{
+    width: 100%;
+    border-collapse: collapse;
+    
+    th,td{
+      border: none;
+      padding: .5rem;
+     
+    
+    }
+    thead tr {
+      background-color: rgba(20, 58, 96, 0.6);
+      color: #ffffff;
+    }
+
+    tbody{
+      tr:nth-child(even){
+        background-color: rgb(140, 164, 190,.3);
+        color: white;
+      }
+     
+
+      .table-image{
+        img{
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius:50%;
+        }
+      }
+
+      .table-actions{
+        .action-btn{
+          padding: .25rem .125rem;
+          color:white;
+          border: none;
+          border-radius:2px ;
+          cursor: pointer;
+          outline: none;
+
+          &.btn-trash{
+            background-color: red;
+          }
+          &:not(:last-child){
+            margin-right: .5rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.btn-succes{
+  background-color: rgb(95, 133, 184) !important;
+}
